@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>mohit sharma</h1>
+    <h1>Chitkara university </h1>
+    <% let x=90; %>
+    <% if (x<100) { %>
+        <h1><%= x %></h1>
+        <h1>x is less than 100</h1>
+
+    <% } else { %>
+        <h1>not less than 100</h1>
+    <% } %>
+    <% for(let index = 0; index<10;index++) { %>
+        <h1>Index: <%= index %></h1>
+    <% } %>
+    <% let arr = ["lucknow", "chandigarh", "rajpura", "mirzapur"] %>
+    <ul>
+        <% for(let index = 0; index<arr.length; index++) { %>
+            <li><%= arr[index] %></li>
+        <% } %>
+    </ul>
+</body>
+</html>
