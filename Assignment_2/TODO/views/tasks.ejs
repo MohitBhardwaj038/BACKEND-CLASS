@@ -3,8 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <title>All Tasks</title>
-  <link rel="stylesheet" href="/tasks.css">
+  <!-- <link rel="stylesheet" href="/public/tasks.css"> -->
 </head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    width: 300px;
+  }
+  li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  li:hover {
+    background-color: #f9f9f9;
+  }
+  li::before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  ul {
+    counter-reset: item;
+  }
+  a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+  }
+  .add-task-link {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .add-task-link:hover {
+    background-color: #0056b3;
+  }
+  .add-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(59, 174, 59);
+    padding:10px 20px;
+    border-radius: 5px;
+  }
+  
+  .add-task-a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+</style>
 <body>
   <h1>All Tasks</h1>
   <ul>

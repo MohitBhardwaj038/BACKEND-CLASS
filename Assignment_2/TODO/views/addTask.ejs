@@ -4,9 +4,79 @@
 <head>
   <meta charset="UTF-8">
   <title>Add Task</title>
-  <link rel="stylesheet" href="/addTask.css">
+  <!-- <link rel="stylesheet" href="/public/addTask.css"> -->
 </head>
-
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ebe9e9;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin: 20px 0px;
+    font-weight: bolder;
+  }
+  
+  form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  textarea[name="description"] {
+    height: 100px;
+  }
+  button {
+    background-color: #3579c8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #2d6aae;
+  }
+  
+  a {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
 <body>
   <div class="container">
     <h1>Add New Task</h1>
