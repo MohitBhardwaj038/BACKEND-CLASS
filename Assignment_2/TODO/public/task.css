@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin: 20px 0px;
+    font-weight: bolder;
+  }
+  
+  p {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  a {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
